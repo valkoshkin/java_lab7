@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор: Настройка параметров</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="styles.css" rel="stylesheet">
+    <script type="application/javascript" src="index.js"></script>
+</head>
+<body>
+<header>
+    <p>Калькулятор</p>
+    <div class="header-divider"></div>
+    <p>Настройка параметров</p>
+</header>
+<div class="sub-header">
+    <p>Введите значения операндов, выберите операцию, а затем нажмите кнопку "="</p>
+</div>
+<div class="calculator-container">
+    <form method="get" id="calculation-form" action="result.html">
+        <div class="operations-wrapper">
+            <label>
+                <input required type="radio" name="operation" class="operation" value="+">
+                +
+            </label>
+            <label>
+                <input required type="radio" name="operation" class="operation" value="-">
+                -
+            </label>
+            <label>
+                <input required type="radio" name="operation" class="operation" value="×">
+                ×
+            </label>
+            <label>
+                <input required type="radio" name="operation" class="operation" value="÷">
+                ÷
+            </label>
+        </div>
+        <div class="operands-wrapper">
+            <input required name="firstOperand" type="number" step="any" placeholder="Операнд 1">
+            <span id="operation-label">▧</span>
+            <input required name="secondOperand" type="number" step="any" placeholder="Операнд 2">
+            <input type="submit" value="=">
+        </div>
+    </form>
+</div>
+</body>
+</html>
